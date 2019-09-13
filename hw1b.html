@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <title>Basic Calculator</title>
+    <script src="separate.js"> </script>
+</head>
+
+<body>
+	<hr>
+		<p> This is my calculator </p>
+	</hr>
+
+<form>
+	<table>
+		<tr>
+			<td> X: </td>
+			<td><input type ="text" size="30" id="firstNumber"/> </td>
+		</tr>
+		<tr>
+				<td> Y: </td>
+				<td><input type=text size=30 id="secondNumber"/> </td>
+		</tr>
+			<tr>
+				<td colspan="2" style="text-align: center;">
+					<input type="button" name="operator" value="*" onclick="multiply()"/>
+					<input type="button" name ="operator" value="/" onclick="divide()"/>
+					<input type="button" name="operator" value="-" onclick="subtract()"/>
+					<input type="button" name="operator" value="+" onclick="add()"/>
+				</td>
+			</tr>
+		<tr>
+			<td>Answer: </td>
+			<td><input type="textbox" size="30" id="result" readonly/></td>
+		</tr>
+		</table>
+	</form>
+</body>
+</html>
